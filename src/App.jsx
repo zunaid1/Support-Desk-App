@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 // import Ticket from './Components/Ticket';
 import Body from './Components/Body';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
 
       {/* Body */}
       <Body></Body>
+
+      <Footer></Footer>
 
     </>
   )

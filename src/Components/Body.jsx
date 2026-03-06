@@ -29,9 +29,16 @@ const Body = () => {
 
 
 	const handleCardClicked = (ticket) => {
-		//alert(ticket.title);
-		toast.success(`Added to Pending List : ${ticket.title}`);
-		//toast.info("New ticket created!");
+		//toast.success(`Added to Pending List : ${ticket.title}`);
+		toast.success(`"${ticket.title}" added to Pending List`, {
+			position: "top-right",
+			autoClose: 2000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			theme: "light"
+		});
 		SetInProCounter([...InProCounter, ticket]);
 
 	}
@@ -72,11 +79,18 @@ const Body = () => {
 
 			{/* Ticket Section */}
 			<section className=' w-11/12 mx-auto flex gap-5 items-start justify-between'>
+				
 				{/* Tickets */}
-				<div id='ticketCounter' className='w-8/12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2'>
+			
+				<div id='ticketCounter' className='w-8/12 '>
+				<h1 className='font-bold text-2xl text-left my-2'>Customer Tickets:</h1>
+
+				<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2'>
 					{
 						tickets.map(ticket => <Ticket handleCardClicked={handleCardClicked} ticket={ticket}></Ticket>)
 					}
+				</div>
+					
 
 				</div>
 
@@ -90,7 +104,7 @@ const Body = () => {
 						<div className='flex flex-col gap-3 justify-start '>
 							{
 								InProCounter.length > 0 ?
-									(InProCounter.map((task, index) => <TaskCard handleCompleted={handleCompleted} key={index} task={task}></TaskCard>))
+									(InProCounter.map((task) => <TaskCard handleCompleted={handleCompleted} key={task.id} task={task}></TaskCard>))
 									: (<h3 className='text-center'>Select a ticket to add to Task Status</h3>)
 							}
 						</div>
@@ -105,7 +119,7 @@ const Body = () => {
 						<div className='flex flex-col gap-3 justify-start '>
 							{
 								ResolvedCounter.length > 0 ?
-									(ResolvedCounter.map((task, index) => <h1 key={index} className='py-5 text-xl bg-[#E0E7FF] px-1'>{task.title}</h1>))
+									(ResolvedCounter.map((task) => <h1 key={task.id} className='py-5 text-xl bg-[#E0E7FF] px-1 transition duration-300 hover:scale-102 hover:shadow-xl hover:cursor-pointer'>{task.title}</h1>))
 									: (<h3 className='text-center'>No Resoled tasks yet.</h3>)
 							}
 						</div>
