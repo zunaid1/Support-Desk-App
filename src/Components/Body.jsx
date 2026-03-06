@@ -63,11 +63,11 @@ const Body = () => {
 	return (
 		<section className='bg-slate-200'>
 			{/* Banner Container */}
-			<div className='my-5 py-10 w-11/12  mx-auto flex gap-3'>
+			<div className='my-5 py-10 w-11/12  mx-auto flex gap-3 flex-col md:flex-row'>
 
 				{/* In-Progress Counter */}
 				<div
-					className="w-1/2 text-center text-2xl text-white p-5 h-[250px] flex items-center justify-center flex-col rounded-xl gap-5 bg-center bg-no-repeat bg-cover transition duration-300 hover:scale-105 hover:shadow-xl"
+					className="w-full md:w-1/2 text-center text-2xl text-white p-5 h-[250px] flex items-center justify-center flex-col rounded-xl gap-5 bg-center bg-no-repeat bg-cover transition duration-300 hover:scale-105 hover:shadow-xl"
 					style={{
 						backgroundImage: `url(${backImage1}), linear-gradient(135deg,#422AD5,#6A4BFF)`,
 						backgroundSize: "cover, cover",
@@ -78,7 +78,7 @@ const Body = () => {
 				</div>
 
 
-				<div className="w-1/2 text-center text-2xl text-white p-5 h-[250px] flex items-center justify-center flex-col rounded-xl gap-5 bg-center bg-no-repeat bg-cover transition duration-300 hover:scale-105 hover:shadow-xl"
+				<div className="w-full md:w-1/2 text-center text-2xl text-white p-5 h-[250px] flex items-center justify-center flex-col rounded-xl gap-5 bg-center bg-no-repeat bg-cover transition duration-300 hover:scale-105 hover:shadow-xl"
 					style={{
 						backgroundImage: `url(${backImage2}), linear-gradient(135deg,#22c55e,#0f766e)`,
 						backgroundSize: "cover, cover",
@@ -95,11 +95,11 @@ const Body = () => {
 			</div>
 
 			{/* Ticket Section */}
-			<section className=' w-11/12 mx-auto flex gap-5 items-start justify-between'>
+			<section className=' w-11/12 mx-auto flex gap-5 items-start justify-between flex-col-reverse md:flex-row'>
 				
 				{/* Tickets */}
 			
-				<div id='ticketCounter' className='w-8/12 '>
+				<div id='ticketCounter' className='w-full md:w-8/12 '>
 				<h1 className='font-bold text-2xl text-left my-2'>Customer Tickets:</h1>
 
 				<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2'>
@@ -113,7 +113,7 @@ const Body = () => {
 
 
 				{/* Status Container */}
-				<div className='w-4/12'>
+				<div className='w-full md:w-4/12'>
 					{/* Task Status  */}
 
 					<div id='taskStatusCounter' className=''>
