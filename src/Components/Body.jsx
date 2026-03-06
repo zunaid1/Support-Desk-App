@@ -6,6 +6,8 @@ import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import TaskCard from './TaskCard';
+import backImage1 from '../assets/vector1.png';
+import backImage2 from '../assets/vector2.png';
 
 
 
@@ -62,12 +64,27 @@ const Body = () => {
 		<section className='bg-slate-200'>
 			{/* Banner Container */}
 			<div className='my-5 py-10 w-11/12  mx-auto flex gap-3'>
-				<div className='w-1/2 bg-indigo-500 text-center text-2xl text-white p-5 h-50 flex items-center justify-center flex-col rounded-xl gap-5'>
+
+				{/* In-Progress Counter */}
+				<div
+					className="w-1/2 text-center text-2xl text-white p-5 h-[250px] flex items-center justify-center flex-col rounded-xl gap-5 bg-center bg-no-repeat bg-cover transition duration-300 hover:scale-105 hover:shadow-xl"
+					style={{
+						backgroundImage: `url(${backImage1}), linear-gradient(135deg,#422AD5,#6A4BFF)`,
+						backgroundSize: "cover, cover",
+					}}
+				>
 					<h3>In-Progress</h3>
-					<h1 id='inProgressCounter' className='font-bold text-5xl'>{InProCounter.length}</h1>
+					<h1 className="font-bold text-5xl">{InProCounter.length}</h1>
 				</div>
 
-				<div className='w-1/2 bg-green-500 text-center text-2xl text-white p-5 h-50 flex items-center justify-center flex-col rounded-xl gap-5'>
+
+				<div className="w-1/2 text-center text-2xl text-white p-5 h-[250px] flex items-center justify-center flex-col rounded-xl gap-5 bg-center bg-no-repeat bg-cover transition duration-300 hover:scale-105 hover:shadow-xl"
+					style={{
+						backgroundImage: `url(${backImage2}), linear-gradient(135deg,#22c55e,#0f766e)`,
+						backgroundSize: "cover, cover",
+					}}
+
+				>
 					<h3>Resolved</h3>
 					<h1 className='font-bold text-5xl'>{ResolvedCounter.length}</h1>
 				</div>
