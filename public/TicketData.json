@@ -1,0 +1,137 @@
+[
+  {
+    "id": "TKT-1001",
+    "title": "Payment Gateway Timeout",
+    "description": "Customers are reporting 504 errors when attempting to checkout using credit cards.",
+    "customer": "Global Retail Corp",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-03-05T08:30:00Z"
+  },
+  {
+    "id": "TKT-1002",
+    "title": "Login MFA Loop",
+    "description": "Users are being asked for MFA codes repeatedly even after successful verification.",
+    "customer": "TechFlow Inc",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-05T09:15:00Z"
+  },
+  {
+    "id": "TKT-1003",
+    "title": "Typo in Documentation",
+    "description": "Found a spelling error in the API reference section under 'Authentication'.",
+    "customer": "Freelance Dev",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-04T14:20:00Z"
+  },
+  {
+    "id": "TKT-1004",
+    "title": "Dashboard Charts Not Rendering",
+    "description": "The analytics tab is showing blank widgets for the last 24-hour view.",
+    "customer": "DataViz Solutions",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-06T01:10:00Z"
+  },
+  {
+    "id": "TKT-1005",
+    "title": "Feature Request: Dark Mode",
+    "description": "Requesting a native dark mode for the mobile application to reduce eye strain.",
+    "customer": "NightOwl Media",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2026-03-01T11:00:00Z"
+  },
+  {
+    "id": "TKT-1006",
+    "title": "Database Connection Leak",
+    "description": "Monitoring tools show a steady increase in abandoned DB connections in production.",
+    "customer": "Core Systems",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-03-06T03:45:00Z"
+  },
+  {
+    "id": "TKT-1007",
+    "title": "Password Reset Email Not Sent",
+    "description": "Users on the @outlook.com domain are not receiving reset links.",
+    "customer": "BlueSky Agency",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-05T22:10:00Z"
+  },
+  {
+    "id": "TKT-1008",
+    "title": "Update Subscription Plan",
+    "description": "Customer wants to upgrade from Pro to Enterprise tier.",
+    "customer": "Summit Logistics",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02T16:30:00Z"
+  },
+  {
+    "id": "TKT-1009",
+    "title": "API Rate Limit Clarification",
+    "description": "Seeking details on the burst capacity for the Tier 2 API key.",
+    "customer": "AppIntegrate",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2026-03-05T13:05:00Z"
+  },
+  {
+    "id": "TKT-1010",
+    "title": "Broken Image Links in Newsletter",
+    "description": "The images in the March newsletter are broken for Gmail users.",
+    "customer": "Marketing Hub",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-06T04:00:00Z"
+  },
+  {
+    "id": "TKT-1011",
+    "title": "White Screen on Startup",
+    "description": "App crashes immediately after the splash screen on Android 14.",
+    "customer": "Mobile First Ltd",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-03-06T02:20:00Z"
+  },
+  {
+    "id": "TKT-1012",
+    "title": "Invoice Discrepancy",
+    "description": "Billing statement for February shows a double charge for the storage add-on.",
+    "customer": "CloudStorage Co",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T09:00:00Z"
+  },
+  {
+    "id": "TKT-1013",
+    "title": "Logo Update Request",
+    "description": "Please update our partner logo in the 'Trusted By' section of your site.",
+    "customer": "Legacy Bank",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-05T17:45:00Z"
+  },
+  {
+    "id": "TKT-1014",
+    "title": "SSO Certificate Expiry",
+    "description": "The SAML certificate for SSO is expiring in 3 days.",
+    "customer": "Enterprise Corp",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-06T00:05:00Z"
+  },
+  {
+    "id": "TKT-1015",
+    "title": "Slow Search Performance",
+    "description": "Global search takes over 10 seconds to return results for indexed files.",
+    "customer": "Search Wizards",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-06T04:10:00Z"
+  }
+]
